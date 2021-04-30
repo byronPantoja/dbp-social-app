@@ -1,9 +1,9 @@
-import { auth, firestore, googleAuthProvider } from "../lib/firebase";
-import { UserContext } from "../lib/context";
+import { auth, firestore, googleAuthProvider } from "@lib/firebase";
+import { UserContext } from "@lib/context";
 
 import { useEffect, useState, useCallback, useContext } from "react";
 import debounce from "lodash.debounce";
-import Metatags from "../components/Metatags";
+import Metatags from "@components/Metatags";
 
 export default function Enter(props) {
   const { user, username } = useContext(UserContext);
